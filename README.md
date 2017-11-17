@@ -1,3 +1,8 @@
-# wifi-sniffer
+# Wi-Fi - Sniffer
 A school project for the HTL-Leonding by students of the 3BHIF
-`Hier wird nur ein Text eingefügt, um das Comitten und Pushen zu testen.`
+
+Tools and things that we use:
+* Node-Red
+* MQTT Server
+* GitHub (duh)
+* NodeMCU (ESP 8266)
