@@ -17,3 +17,8 @@ Das ziel ist ein Gerät zu programmieren und zu bauen das es möglich macht die 
 ### Produkteinsatz:
 Dieser so genannter “Wi-Fi - Sniffer” kann benutzt werden um zu wissen wie viele Geräte oder Personen in der nähe sind und auch wie weit entfernt.
 Ein Anwendungsfall wäre zum Beispiel, man wissen will wie viele Leute zu einem Treffen gekommen sind.
+
+### Meilensteinliste:
+| Termin  | Meilensteine  |
+| ------ | ----------- |
+| x.x.x | --- |
