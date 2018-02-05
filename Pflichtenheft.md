@@ -2,7 +2,7 @@
 
 
 
-| Projektbezeichnung | Vocabulous 	 		|
+| Projektbezeichnung | WiFi-Sniffer 	 		|
 |------------------- |:-------------------: |
 | Projektleiter		 | Daniel Hofmann       |
 | Erstellt am 		 | 08.01.2018		    |
@@ -84,10 +84,10 @@ Die Effizienz soll durch mehrere Sniffer erhöht werden, die jeweils festgelegte
 
 Der Wi-Fi-Sniffer soll am Tag der offenen Tür 2019 verwendet und zum ersten Mal im Großeinsatz getestet werden, das Projekt an sich soll aber bis Ende des Schuljahres 2017/18 fertiggestellt werden.
 #### Ergebnis
-Das Ergebnis ist ein Programm am ESP8266, das alle funktionalen Anforderungen erfülllt, sowie eine Datenbankstruktur zur Speicherung der MAC-Adressen. 
+Das Ergebnis ist ein Programm auf einem oder mehreren ESP8266, das alle funktionalen Anforderungen erfülllt, sowie eine Datenbankstruktur zur Speicherung der MAC-Adressen bereitstellt. 
 
 ## 6 Mengengerüst
-Am Tag der offenen Tür werden logischerweise mehr Datensätze anfallen, als an einem regulären Einsatztag in der Schule. An einem noramlen Tag wären das mit Smartphones alleine geschätzt 800 Datensätze.
+Am Tag der offenen Tür werden logischerweise mehr Datensätze anfallen, als an einem regulären Einsatztag in der Schule. An einem noramlen Tag wären das mit Smartphones alleine geschätzt 800 Datensätze, das hängt allerdings von der Reichweite und Positionierung des Sniffers ab.
 
 ## 7 Risikoakzeptanz
 In Arbeit (Die im Unterricht durchbesprochenen und zur Zeit relevanten Punkte wurden umgesetzt.)
@@ -113,4 +113,4 @@ In Arbeit (Die im Unterricht durchbesprochenen und zur Zeit relevanten Punkte wu
 ## 14 Literaturverzeichnis
 In Arbeit (Die im Unterricht durchbesprochenen und zur Zeit relevanten Punkte wurden umgesetzt.)
 ## 15 Abbildungsverzeichnis
-In Arbeit (Die im Unterricht durchbesprochenen und zur Zeit relevanten Punkte wurden umgesetzt.)
+Keine Abbildungen vorhanden
