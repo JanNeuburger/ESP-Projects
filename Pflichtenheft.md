@@ -12,7 +12,7 @@
 
 
 ## Weitere Produktinformationen
-#####Mitwirkende
+##### Mitwirkende
 - Daniel Hofmann
 - Jan Neuburger
 - Joules Munoz
