@@ -54,15 +54,18 @@
 
 
 ## 1 Motivation
-Dieses Projekt wird im Rahmen des Gegenstandes Projetentwicklung durchgeführt. Ursprünglich hatten wir ein anderes Projekt geplant, doch wurde uns dieses vorgeschlagen und wir entschieden uns um, weil dieses Projekt um einiges interessanter auf uns wirkt.
+Dieses Projekt wird im Rahmen des Gegenstandes Projetentwicklung durchgeführt. Ursprünglich wurde der Projektgruppe eine andere Themenstellung zugeteilt, doch erscheint diese neue Aufgabe für das Projektteam interessanter. Das Projekt soll für das Projektteam eine Vertiefung im Bereich IOT sein und das Projektteam dazu motivieren, sich mit dieser Thematik zu beschäftigen.  
 
 ## 2 Ausgangssituation und Zielsetzung
 ## 2.1 Ausgangssituation und Projektbegründung
 ---
-Das Projekt soll für uns eine Vertiefung in den Bereich des IOT sein und uns dazu motivieren, uns in darin zu beschäftigen und soll zu experimentellen Zwecken durchgeführt werden und wir sollen feststellen, was man mit einem Wi-Fi-Sniffer gemacht werden kann.
+In vielen Organisationen muss man seine Anwesenheit dokumentieren (zB im Beruf, in der Schule aber auch bei Freizeitaktivitäten wie in einem Sportstudio. Bei Betreten bzw Verlassen von Räumlichkeiten muss man sich entweder bei einem Automaten oder bei einer PErson an- und abmelden.
 
 ### 2.1.1 Beschreibung des Problembereiches
-Bei diesem Projekt liegt im Grunde kein Problembereich vor, das Projekt dient nur dem Testen der Fähigkeiten eines Wi-Fi-Sniffers.
+Dieser An- und Abmeldevorgang kann vergessen oder nicht zeitgerecht durchgeführt werden. 
+
+### 2.1.2 Aufgabenstellung
+Es wäre vorteilhaft diese An- und Abmeldung automatisiert zu ermöglichen, ohne technische Geräte oder zusätzlichen Apps am Mobiltelefon. Durch mehrere kleinere experimentelle Projekte soll die Leistungsfähigkeit und der mögliche Einsatz von WLAN-Sniffern für diesen Zweck überprüft werden.
 
 ### 2.1.2 Glossar
 |          Fachbegriff | Erklärung     |
