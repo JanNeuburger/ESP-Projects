@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include <ESP8266WiFi.h>
 #include <ArduinoJson.h>
 // #include <credentials.h>
@@ -44,44 +45,6 @@ void setup() {
   wifi_set_promiscuous_rx_cb(promisc_cb);   // Set up promiscuous callback
   wifi_promiscuous_enable(enable);
 }
-
-
-
-
-void loop() {
-  channel = 1;
-  boolean sendMQTT = false;
-  wifi_set_channel(channel);
-  while (true) {
-    nothing_new++;                          // Array is not finite, check bounds and adjust if required
-    if (nothing_new > 200) {                // monitor channel for 200 ms
-      nothing_new = 0;
-      channel++;
-      if (channel == 15) break;             // Only scan channels 1 to 14
-      wifi_set_channel(channel);
-    }
-    delay(1);  // critical processing timeslice for NONOS SDK! No delay(0) yield()
-
-    if (clients_known_count > clients_known_count_old) {
-      clients_known_count_old = clients_known_count;
-      sendMQTT = true;
-    }
-    if (aps_known_count > aps_known_count_old) {
-      aps_known_count_old = aps_known_count;
-      sendMQTT = true;
-    }
-    if (millis() - sendEntry > SENDTIME) {
-      sendEntry = millis();
-      sendMQTT = true;
-    }
-  }
-  purgeDevice();
-  if (sendMQTT) {
-    showDevices();
-    sendDevices();
-  }
-}
-
 
 void connectToWiFi() {
   delay(10);
@@ -216,3 +179,39 @@ void sendDevices() {
   wifi_promiscuous_enable(enable);
   sendEntry = millis();
 }
+
+
+void loop() {
+  channel = 1;
+  boolean sendMQTT = false;
+  wifi_set_channel(channel);
+  while (true) {
+    nothing_new++;                          // Array is not finite, check bounds and adjust if required
+    if (nothing_new > 200) {                // monitor channel for 200 ms
+      nothing_new = 0;
+      channel++;
+      if (channel == 15) break;             // Only scan channels 1 to 14
+      wifi_set_channel(channel);
+    }
+    delay(1);  // critical processing timeslice for NONOS SDK! No delay(0) yield()
+
+    if (clients_known_count > clients_known_count_old) {
+      clients_known_count_old = clients_known_count;
+      sendMQTT = true;
+    }
+    if (aps_known_count > aps_known_count_old) {
+      aps_known_count_old = aps_known_count;
+      sendMQTT = true;
+    }
+    if (millis() - sendEntry > SENDTIME) {
+      sendEntry = millis();
+      sendMQTT = true;
+    }
+  }
+  purgeDevice();
+  if (sendMQTT) {
+    showDevices();
+    sendDevices();
+  }
+}
+

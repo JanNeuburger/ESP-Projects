@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "gdb",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "name": "PlatformIO Debugger",
+            "target": "c:/Users/Jan Neuburger/Documents/Schule/SYP/wifi-sniffer/wifi-sniffer/project/.pioenvs/nodemcuv2/firmware.elf",
+            "gdbpath": "C:/Users/Jan Neuburger/.platformio/penv/Scripts/piodebuggdb",
+            "autorun": [ "source .pioinit" ],
+            "preLaunchTask": "PlatformIO: Pre-Debug",
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+    ]
+}
