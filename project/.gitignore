@@ -1,5 +1,7 @@
 .pioenvs
 .piolibdeps
+project/\.vscode/
+
 # Created by https://www.gitignore.io/api/c++,windows,platformio,visualstudiocode
 
 ### C++ ###
@@ -73,4 +75,3 @@ $RECYCLE.BIN/
 
 
 # End of https://www.gitignore.io/api/c++,windows,platformio,visualstudiocode
-project/\.vscode/
