@@ -1,5 +1,7 @@
 .pioenvs
 .piolibdeps
+project/\.vscode/
+
 # Created by https://www.gitignore.io/api/c++,windows,platformio,visualstudiocode
 
 ### C++ ###
