@@ -5,3 +5,5 @@ Tools and things that we use:
 * Node-Red
 * MQTT Server
 * NodeMCU (ESP 8266)
+* ESP01
+* Waveshare e-Paper module
