@@ -1,2 +1,6 @@
 
 project/\.vscode/
+
+project/\.pioenvs/
+
+project/\.piolibdeps/
