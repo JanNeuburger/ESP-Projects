@@ -9,3 +9,5 @@ Tools and things that we use:
 * NodeMCU (ESP 8266)
 * ESP01
 * Waveshare e-Paper module
+* [Video for Wifi-Sniffer](http://getpo.st/Gu)
+* [Collection of IR-Signals to test Fernbedinator](http://getpo.st/jX)
