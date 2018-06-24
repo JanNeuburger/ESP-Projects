@@ -41,18 +41,6 @@
         }
     }
     
-    /*print_r("Next UE: ");
-    if($foundcurrent == 1){
-        for($i = 0; $i < sizeof($table['result']); $i++){
-            if(intval($table['result'][$i]['endTime']) + 15){
-                
-            }
-        }
-    }*/
-    
-    
-    //print_r($table);
-    
     $untis->logout();
     
 ?>
