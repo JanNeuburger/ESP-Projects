@@ -16,31 +16,72 @@
     $teachers   = $untis->getTeachers();
     $rooms      = $untis->getRooms();
     
-    $currenttime = date('hi');
+    $currenttime = date('Hi');
     $currenttime = intval($currenttime);
+
+    $stack = array();
+    $line = "";
     
-    $endtime = 0;
-    $comparestarttime = 0;
+    $i = 0;
+    $j = 0;
     
-    $foundcurrent = 0;
+    foreach($table['result'] as $class){
+        $roomnumber = $table['result'][$i]['ro'][0]['id'];
+        
+        foreach($rooms['result'] as $roomname){
+            if($roomname['id'] == $roomnumber){
+                $roomnumber = $roomname['name'];
+                break;
+            }
+        }
+        
+        $line = $line . $table['result'][$i]['startTime'];
+        if(strlen($line) == 3){
+            $line = '0' . $line;
+        }
+        $checkendtime = $table['result'][$i]['endTime'];
+        if(strlen($checkendtime) == 3){
+            $line = $line . "0";
+        }
+        $line = $line . $table['result'][$i]['endTime'];
+        $line = $line . $roomnumber;
+        array_push($stack, $line);
+        $line = "";
+        $i++;
+    }
     
-    print_r("Current UE: ");
-    for($i = 0; $i < sizeof($table['result']); $i++){
-        $endtime= intval($table['result'][$i]['endTime']);
-        $comparestarttime = intval($table['result'][$i]['startTime']);
-        if(($currenttime < $endtime) && ($currenttime > $comparestarttime)){
-            print_r(" now: ");
-            print_r($currenttime);
-            print_r(" end: ");
-            print_r($endtime);
-            print_r(" begin: ");
-            print_r($comparestarttime);
-            print_r(" room: ");
-            print_r($table['result'][$i]['ro'][0]['id']);
-            $foundcurrent = 1;
+    function cmp($a, $b)
+    {
+        return strcmp($a, $b);
+    }
+
+    usort($stack, "cmp");
+   
+    $current = " ";
+    $prev = " ";
+    $k = 0;
+   
+    foreach($stack as $checkline){
+        $current = substr($checkline, 0, 4);
+        if($current == $prev){
+            unset($stack[$k]);
+        }
+        $k++;
+        $prev = $current;
+    }
+    
+    $beginning = 0;
+    $two = 0;
+    
+    foreach($stack as $unterricht){
+        $beginning = intval(substr($unterricht,0,4));
+        $beginning = $beginning - 105;
+        $ending = intval(substr($unterricht,4,4));
+        if($currenttime >= $beginning && $currenttime <= $ending){
+            print_r(substr($unterricht, 0,2).":".substr($unterricht, 2,2)." - ".substr($unterricht, 4,2).":".substr($unterricht,6,2)."\nRaum ".substr($unterricht,8)."\n");
         }
     }
     
     $untis->logout();
-    
+    //print_r(substr($unterricht, 0,2).":".substr($unterricht, 2,2)." - ".substr($unterricht, 4,2).":".substr($unterricht,6,2)."\nRaum ".substr($unterricht,8));
 ?>
