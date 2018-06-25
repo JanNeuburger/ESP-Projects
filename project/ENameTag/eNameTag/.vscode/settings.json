@@ -15,5 +15,9 @@
         "ratio": "cpp",
         "system_error": "cpp",
         "type_traits": "cpp"
+    },
+    "terminal.integrated.env.linux": {
+        "PATH": "/home/joules/.platformio/penv/bin:/home/joules/.platformio/penv:/home/joules/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games",
+        "PLATFORMIO_CALLER": "vscode"
     }
 }

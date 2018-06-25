@@ -12,8 +12,8 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PlatformIO Debugger",
-            "executable": "c:/Users/Jan Neuburger/Documents/Schule/SYP/wifi-sniffer/wifi-sniffer/project/ENameTag/eNameTag/.pioenvs/nodemcuv2/firmware.elf",
-            "toolchainBinDir": "",
+            "executable": "/home/joules/Documents/School/GIT/wifi-sniffer/project/ENameTag/eNameTag/.pioenvs/nodemcuv2/firmware.elf",
+            "toolchainBinDir": "/home/joules/.platformio/packages/toolchain-xtensa/bin",
             "preLaunchTask": "PlatformIO: Pre-Debug",
             "internalConsoleOptions": "openOnSessionStart"
         },
@@ -21,8 +21,8 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PlatformIO Debugger (Skip Pre-Debug)",
-            "executable": "c:/Users/Jan Neuburger/Documents/Schule/SYP/wifi-sniffer/wifi-sniffer/project/ENameTag/eNameTag/.pioenvs/nodemcuv2/firmware.elf",
-            "toolchainBinDir": "",
+            "executable": "/home/joules/Documents/School/GIT/wifi-sniffer/project/ENameTag/eNameTag/.pioenvs/nodemcuv2/firmware.elf",
+            "toolchainBinDir": "/home/joules/.platformio/packages/toolchain-xtensa/bin",
             "internalConsoleOptions": "openOnSessionStart"
         }
     ]
