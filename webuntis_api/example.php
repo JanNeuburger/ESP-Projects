@@ -72,14 +72,23 @@
     
     $beginning = 0;
     $two = 0;
+    $finallist = array();
     
     foreach($stack as $unterricht){
-        $beginning = intval(substr($unterricht,0,4));
-        $beginning = $beginning - 105;
         $ending = intval(substr($unterricht,4,4));
-        if($currenttime >= $beginning && $currenttime <= $ending){
-            print_r(substr($unterricht, 0,2).":".substr($unterricht, 2,2)." - ".substr($unterricht, 4,2).":".substr($unterricht,6,2)."\nRaum ".substr($unterricht,8)."\n");
+        if(!($currenttime > $ending)){
+            array_push($finallist,$unterricht);
         }
+    }
+    
+    $m = 0;
+    
+    foreach($finallist as $linet){
+        print_r(substr($linet, 0,2).":".substr($linet, 2,2)." - ".substr($linet, 4,2).":".substr($linet,6,2)."\nRaum ".substr($linet,8)."\n");
+        if($m == 1){
+            break;
+        }
+        $m++;
     }
     
     $untis->logout();
